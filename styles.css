@@ -1,0 +1,68 @@
+/* Reset default list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the navigation menu */
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Add an underline to the active page link */
+nav a.active {
+border-bottom: 3px solid #FFFFFF;
+padding-bottom: 4px;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+        header img {
+            float: right;
+            margin: 10px 10px 0 0;
+            width: 150px;
+            height: auto;
+        }
+
+/* Style the content section */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Additional styling for your content as needed */
+    <style>
+        /* Additional CSS for increasing space between social media icons */
+        .social-media-icons a {
+            margin-right: 20px; /* Adjust the margin value to control the space between icons */
+        }
+    </style>
