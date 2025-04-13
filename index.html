@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>About Me - Your Name</title>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Test Dark/Light Toggle</title>
+  <style>
+    :root {
+      --bg-color: white;
+      --text-color: black;
+    }
+
+    body.dark-mode {
+      --bg-color: #121212;
+      --text-color: #f1f1f1;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: sans-serif;
+      padding: 2rem;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Mehedi Hasan Himel
-            <img src="myphoto.png" alt="Your Name">
-        </h1>
-        <p>Electrical Engineer</p>
-        <p>College More, Nageshwari, Kurigram</p>
-<div class="social-media-icons">
-        <a style="margin-right: 20px; color: #FFFFFF;" href="https://www.facebook.com/mehedi.himel.146/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a style="margin-right: 20px; color: #FFFFFF;"  href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a style="margin-right: 20px; color: #FFFFFF;" href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-</div>
-    </header>
-        <nav>
-            <ul>
-                <li><a href="index.html"class="active">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
 
-    <div class="content">
-        <h1>About Me</h1>
-        <p>Hello there, and welcome to my corner of the web! My name is [Your Name], and I'm delighted to share a 
-            little bit about myself with you. I recently graduated with a degree in 
-            Electrical and Electronic Engineering from Rajshahi University of Engineering and Technology, 
-            and I hail from the charming town of Kurigram, Bangladesh.</p>
-        <p>My journey in the world of Electrical and Electronic Engineering has been an exhilarating one. From a young age, 
-            I was drawn to the fascinating world of circuits, innovation, and the boundless possibilities that technology presents. My time at Rajshahi University of Engineering and 
-            Technology was not just an educational endeavor; it was a transformative experience that ignited my passion for engineering and technology..</p>
-        <p>Feel free to contact me if you have any questions or if you'd like to collaborate on a project.</p>
-    </div>
+  <button class="toggle-btn" onclick="toggleMode()">Toggle Mode</button>
+
+  <h1>Hello, this is a dark/light mode test!</h1>
+  <p>The background and text should change when you toggle.</p>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
 </body>
 </html>
